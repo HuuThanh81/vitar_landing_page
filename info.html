@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+        <body>
+            <header class="header-main">
+            <div id="menu">
+                <ul>
+                    <li><img src="/imgs/logo-vitar-white.png" alt="logo-vitar"></li>
+                    <li><a href="#whychosevitar">VÌ SAO CHỌN VITAR</a></li>
+                    <li><a href="#ProductCharacter">ĐẶC TÍNH SẢN PHẨM</a></li>
+                    <li><a href="#HealthCare">CHĂM SÓC SỨC KHỎE</a></li>
+                    <li><a onclick="openForm()">ĐẶT HÀNG</a></li>
+                    <li><button>0917.535.653</button></li>
+                </ul>  
+            </div>
+            </header>
+            <div style="display: flex; justify-content: center; padding-top: 70px;">
+                <main>
+                    <div class="section-content" style="padding-bottom: 30px;">
+                        <h2>HƯỚNG DẪN ĐẶT HÀNG</h2>
+                        <div style="width:1080px; height:1px; background-color: #777777;"></div>
+                        <p><span class="tutor">Bước 1: Truy cập website và lựa chọn số lượng sản phẩm cần mua để mua hàng.</span></br></p>
+                        <p><span class="tutor">Bước 2: Click vào ô Đặt mua ngay để mua hàng, màn hình hiển thị ra popup để điền thông tin mua hàng.</span></br></p>
+                        <p><span class="tutor">Bước 3: Điền đầy đủ thông tin của bạn để đặt hàng:</br></p>
+                        <p><span class="tutor"> Họ và tên: VD: Nguyễn văn A</br></span></p>
+                        <p><span class="tutor"> Email: VD: nguyenvana@gmail.com</br></span></p>
+                        <p><span class="tutor">số điện thoại: VD: 0327 038 XXX</br></span></p>
+                        <p><span class="tutor">số điện thoại: VD: 0327 038 XXX</br></span></p>
+                        <p><span class="tutor">Số lượng: 2</br></span></p>
+                        <p><span>Địa chỉ giao hàng: 100 đường số 1, phường 1, quận 1, TPHCM.</span></br></span></p>
+                        <p> <span class="tutor">Bước 4: Xem lại thông tin đặt hàng, Nếu muốn đặt hàng vui lòng nhấn nút: Đặt hàng.
+                            Sau khi nhận được đơn hàng bạn gửi chúng tôi sẽ liên hệ bằng cách gọi điện lại để xác nhận lại đơn hàng và địa chỉ của bạn.</span></br></p>
+                        <p><span class="tutor">Bước 5: Hoặc gọi điện thoại trực tiếp vào số hotline: 0917 535 653 để được tư vấn về sản phẩm.</span></br></p>
+                        <span class="tutor">Xin trân trọng cảm ơn !</span>
+                    </div>
+                </main>
+            </div>
+            <div class="footer-container">
+                <div>
+                    <footer class="grid-footer">
+                        <div class="grid-footer-item">
+                            <span>VITAR</span></br>
+                            <a href="#whychosevitar">Vì sao chọn VITAR</a></br>
+                            <a href="#ProductCharacter">Đặc tính sản phẩm</a></br>
+                            <a href="#HealthCare">Chăm sóc sức khỏe</a></br>
+                            <img style="width: 150px;" src="/img/20150827110756-dathongbao-icon2.png" alt="">
+                        </div>
+                        <div class="grid-footer-item">
+                            <span>THÔNG TIN - CHÍNH SÁCH</span></br>
+                            <a href="/infor-order.html">Thông tin đặt hàng</a></br>
+                            <a href="/infor-bill.html">Thông tin thanh toán</a></br>
+                            <a href="/present.html">Chính sách trả hàng</a>
+                        </div>
+                        <div class="grid-footer-item">
+                            <span>CÔNG TY TNHH SX TM DV TẦM XUÂN</span>
+                            <p>📍 95CT Tam Đảo, cư xá Bắc Hải, Phường 15,</br> Quận 10, TP.HCM</p>
+                            <p>📞 0917 535 653 – 0918 468 659</p>
+                            <p>✉  info.vitarvn@gmail.com</p>
+                            <p>GPKD: 0312124120 ngày cấp: 15/01/2013</p>
+                            <p>Người đại diện pháp luật: Giám Đốc</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+    </body>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+          <h1 style="color: #067655; text-align: center; font-size: 20px; font-weight: bold;">Thông tin đặt hàng</h1>
+      
+          <label for="Fullname"><b ">Họ và tên(*)</b></label>
+          <input type="text"  name="Fullname" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text"name="email" required>
+      
+          <label for="phoneNumber"><b>Số điện thoại(*)</b></label>
+          <input type="number"name="phoneNumber" required>
+
+          <label for="quantity"><b>Số lượng</b></label>
+          <input type="number"name="quantity" required>
+
+          <label for="address"><b>Địa chỉ giao hàng</b></label>
+          <input type="text"name="address" required>
+
+          <button type="submit" class="btn">ĐẶT HÀNG</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+</html>
